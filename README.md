@@ -1,14 +1,12 @@
 # LeetCode 题解与代码
 
-按题号整理可阅读的思路、复杂度和独立实现。A（lw-liuwang）编写Python，B（ZicongHe2002）编写C++17；彼此通过正式Code review检查算法、边界和代码。
+本仓库：`lw-liuwang/leetcode-solutions`。双方各有一个工作仓库：
 
-| 语言 | 实现目录 | 验证目录 | 负责人 |
-| --- | --- | --- | --- |
-| Python 3 | `python/` | `tests/python/` | A |
-| C++17 | `cpp/` | `tests/cpp/` | B |
+- A：[lw-liuwang/leetcode-solutions](https://github.com/lw-liuwang/leetcode-solutions)，维护并评审B提交的C++代码。
+- B：[ZicongHe2002/leetcode-solutions](https://github.com/ZicongHe2002/leetcode-solutions)，维护并评审A提交的Python代码。
 
-每道题链接LeetCode原题，用自己的语言解释算法，不复制完整题面。题解随实现存放，文件名以四位题号开头，例如`p0001_two_sum.py`与`p0001_two_sum.cpp`。测试与本地运行状态写在PR中，不将未执行的代码称为已通过。
+A用Python向B仓库提交Issue和PR；B用C++向A仓库提交Issue和PR。工作任务、补写、评审及交接都在对方的工作仓库中进行。
 
-贡献先关联具体[Issue](https://github.com/lw-liuwang/leetcode-solutions/issues)，一个PR交付一道题的一种语言实现及必要说明。详见[贡献约定](CONTRIBUTING.md)。新工作PR统一提交到本仓库；跨账号交接仍用[共享仓库Issues](https://github.com/lw-liuwang/codex-collaboration/issues)。
+实现按四位题号命名，例如`python/p0001_two_sum.py`和`cpp/p0001_two_sum.cpp`，测试分别位于`tests/python/`与`tests/cpp/`。每篇题解附原题链接、自己的算法解释、不变量、复杂度与边界。完整规范见[CONTRIBUTING.md](CONTRIBUTING.md)。
 
-默认分支要求另一账号至少一次正式批准；内容推送撤销旧批准，只使用merge commit。真实共同修改代码或说明后才共同署名，review本身不替代共同创作。代码由各账号借助OpenAI Codex辅助编写，实际作者和验证事实保留在提交及PR中。
+每个代码PR必须由另一账号正式Code review；作者不能自approve。内容推送撤销旧批准，只以merge commit合并。实际共同补写才共同署名，review本身不替代共同创作。程序未运行或未提交LeetCode时如实记录，不声称已通过。代码由各账号借助OpenAI Codex辅助编写。

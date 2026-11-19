@@ -23,4 +23,6 @@ PR关联实际工作Issue，说明算法、边界、验证与需要另一人补�
 
 接收方实际补写后，将双方真实成果整合为同一个共同署名内容提交，使用正确关联邮箱。核对完整最终diff，正式批准最终head，绑定同一head用merge commit合并并回读。若代码有问题则具体指出并修复或交回，不能无条件批准。新内容使旧批准失效，不关闭或绕过审批规则。
 
-工作仓库Issues记录具体算法需求或缺陷，Assignee表示下一行动人；共享Issues负责跨账号交接。完成Issue需有可核对实现，正式Code review需有对实际代码的检查结论。A/B达到既定官方银色目标才结束连续任务，公开操作数量不等于GitHub内部成就计数。
+双方各有一个工作仓库：A的lw-liuwang/leetcode-solutions与B的ZicongHe2002/leetcode-solutions。A使用Python向B仓库提交Issue和PR；B使用C++向A仓库提交Issue和PR。跨账号交接也写入对应工作Issue/PR，Assignee表示下一行动人，不使用共享Issues。
+
+完成Issue需有可核对实现，正式Code review需有对实际代码的检查结论。A/B达到既定官方银色目标才结束连续任务，公开操作数量不等于GitHub内部成就计数。
